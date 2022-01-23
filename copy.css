@@ -1,424 +1,87 @@
-/* GLOBAL CSS */
-
-* {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-h1 {
-    font-size: 2.6rem;
-}
-
-h2 {
-    font-size: 4.8rem;
-}
-
-h3 {
-    font-size: 3rem;
-    font-weight: normal;
-}
-
-h4,
-h5 {
-    font-size: 2, 8rem;
-}
-
-li {
-    font-size: 2rem;
-}
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
+/* FOOTER */
 
 
-/* HEADER */
-
-*/ nav {
-    min-height: 10vh;
-    display: flex;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-    padding: 2rem;
-}
-
-nav ul {
-    display: flex;
-    flex: 1 1 40rem;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-}
-
-
-/* HERO */
-
-.bg {
-    background: url("images/logo-white.png");
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
-
-li {
-    list-style: none;
-    margin-left: 4rem;
-}
-
-.hamburger {
-    display: none;
-}
-
-.navItems li a:hover {
-    color: rgba(255, 0, 0, 0.473);
-}
-
-ul {
-    margin-left: 10rem;
-}
-
-.navItems {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.menu-btn{
-    position: relative;
-    
-}
-
-.main-head {
-    display: flex;
-    justify-content: space-around;
-}
-
-.hero {
-    min-height: 90vh;
-    color: #ffffff;
+footer {
+    min-height: 250px;
+    background-color: #071629;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
 }
 
-.hero h3 {
-    padding: 4rem;
-}
-
-.button {
-    padding: 2rem 6rem;
-    background: rgba(210, 30, 30, 0.966);
-    color: #ffffff;
-    font-size: 1.8rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 6rem;
-    margin: 3rem;
-}
-
-.Paragraph {
-    font-size: 1.5rem;
-    font-family: var(--text-color);
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    max-width: 55rem;
-    margin-top: 6.5rem;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-top: 16rem;
-}
-
-.hero span {
-    font-size: 1rem;
-}
-
-.hero span {
-    display: block;
-    font-family: var(--font-family);
-    font-size: 2rem;
-    margin-top: 0.2rem;
-    margin-bottom: .7rem;
-}
-
-.lgparagraph {
-    text-align: center;
-}
-
-
-/* Hamburger icon
-  ==========================*/
-
-  .navItems .menu-icon {
-    cursor: pointer;
-    padding: 2.5rem;
-    position: relative;
-    user-select: none;
-    height: 7rem;
-    width: 25rem;
-  }
-  
-  .menu-icon span{
-    background: var(--color-white);
-    margin-top: 1rem;
-    display:inline-block;
-    height: 7rem;
-    width: 25rem;
-    transition: background 0.2s ease-out;
-  }
-  .navItems .menu-icon .holberton_school-icon-menu::before,
-  .navItems .menu-icon .holberton_school-icon-menu::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: var(--color-white);
-    transition: all 0.2s ease-out;
-  }
-  
-  .navItems .menu-icon .holberton_school-icon-menu::before {
-    top: 0.7rem;
-  }
-  
-  .navItems .menu-icon .holberton_school-icon-menu:after {
-    top: -0.7rem;
-  }
-  
-  /* menu btn */
-  .menu-btn {
-    display: none;
-  }
-  
-  .menu-btn:checked ~ .navItems {
-    display: block;
-  }
-  
-  .menu-btn:checked ~ .navItems .pc {
-    max-height: 100%;
-    overflow: inherit;
-  }
-  
-  .navItems .menu-btn:checked + .menu-icon .holberton_school-icon-menu {
-    background: transparent;
-  }
-  
-  .navItems .menu-btn:checked + .menu-icon .holberton_school-icon-menu::before {
-    transform: rotate(-45deg);
-  }
-  
-  .navItems .menu-btn:checked + .menu-icon .holberton_school-icon-menu::after {
-    transform: rotate(45deg);
-  }
-  
-  .navItems .menu-btn:checked + .menu-icon .holberton_school-icon-menu::before,
-  .navItems .menu-btn:checked + .menu-icon .holberton_school-icon-menu::after {
-    top: 0;
-  }
-  
-  @media screen and (max-width: 767px) {
-    :root {
-      --header-padding: 2rem 0 0;
-    }
-  
-    .main-head {
-      background: var(--color-black);
-    }
-  
-    .navItems {
-      flex-wrap: wrap;
-      padding: 0 1.5rem;
-    }
-  
-    .main-head .menu-icon {
-      display: block;
-    }
-    .hamburger {
-        position: relative;
-        display: inline;
-    }
-    .menu-btn {
-        display: none;
-        position:absolute;
-        margin: 1rem;
-        transform: scale(2);
-  }
-  
-  @media screen and (max-width: 480px) {
-    .main-head {
-      flex-basis: 70%;
-    }
-  }
-  
-  @media screen and (max-width: 767px) and (min-width: 481px) {
-    .header-logo {
-      flex-basis: 79%;
-    }
-  }
-  
-
-
-/*   What we doâ€¦ */
-
-.section-one {
-    position: relative;
-    min-height: 25rem;
-    text-align: center;
-    color: var(--section-one-color);
-    background-color: white;
-    color: #050507;
-    padding: 3em;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.heading {
-    margin-top: 3rem;
-    font-size: 2rem;
-}
-
-.first-paragraph {
-    font-size: 1.5rem;
-    font-family: var(--text-color);
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    max-width: 35rem;
-    margin-top: 6.5rem;
-}
-
-.holberton_school-icon-ic_sound,
-.holberton_school-icon-ic_video,
-.holberton_school-icon-ic_music,
-.holberton_school-icon-ic_hearing {
-    padding: -5rem;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    text-align: center;
-    font-size: 16px;
-    justify-content: center;
-    font-weight: bold;
-}
-
-.icons {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
-    color: #fc6d71;
-}
-
-.icons .item {
-    display: flex;
-    flex-direction: column;
-}
-
-.shortparag {
-    padding-top: 1rem;
-    margin-top: 0rem;
-}
-
-:root {
-    --color-primary: #d73953;
-    --button-color: #ff6565;
-    --text-color: #080808;
-    --font-family: Source Sans Pro;
-    --font-size-icons: 130px;
-}
-
-.icons h2 {
-    font-size: 4rem;
-}
-
-.icons span {
-    font-size: 14rem;
-}
-
-.icons span {
-    font-size: 120px;
-}
-
-.icons {
-    text-align: center;
-    padding: 3em;
-    margin: 0 auto;
-}
-
-.icons span {
-    font-size: 100px;
-    color: #fc6d71;
-}
-
-.icons h2 {
-    font-size: 19px;
-    color: #0c0a0a;
-}
-
-.icons p {
-    font-size: 19px;
-    color: #0c0a0a;
-}
-
-@media only screen and (max-width: 780px) {
-    .icons {
-        flex-wrap: wrap;
-    }
-    .navItems {
-        display: none;
-    }
-    .bg {
-        background-position: center;
-    }
-}
-
-
-/* RESULT SECTION */
-
-.result {
-    text-align: center;
-    color: #ffffff;
-    padding: 8rem 0 6rem 0;
-    background-image: url("images/headphones_hero_2.jpg");
-    background-size: cover;
-}
-
-.result-title {
-    margin-bottom: 4rem;
-    font-size: 3rem;
-}
-
-.result-cards {
-    background-image: url("images/pentagone.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 190px;
-    height: 180px;
-}
-
-.result-cards p {
-    margin-top: 3.3rem;
-    font-size: 3rem;
-}
-
-.cards {
+.footer {
+    background-color: rgb(8, 8, 29);
+    min-height: 300px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
-    margin: auto;
+    max-width: 1400px;
     flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-    padding: 3em;
-    font-size: 14rem;
-    justify-content: space-around;
-    margin-top: 1rem;
+    --nav-item-font-weight: normal;
+  --nav-item-font-size: var(--font-size-small);
+  padding: var(--footer-padding);
 }
-  }
+
+.footer-content {
+    padding-top: 80px;
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1em;
+        margin: 0 auto;
+        padding-right: 5em;
+        padding-left: 5em;
+}
+
+.footer-links {
+    font-family: 'holberton_school-icon';
+    display: inline;
+}
+
+
+
+.footer-links li:last-child {
+    margin-right: 80rem;
+}
+
+.copyright {
+    text-align: center;
+    opacity: 0.35;
+    font-size: var(--font-size-menu);
+    margin-top: 100px;
+            color: gray;
+            font-size: 10px;
+            padding: 2rem;
+            font-family: Source Sans Pro;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            /* identical to box height */
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.35;
+    }
+
+
+
+.logo-text {
+    width: 161px;
+
+}
+
+.heading-logo {
+    width: 161px;
+    display: inline;
+}
+
+@media (max-width: 767px) {
+    .footer {
+      --footer-padding: 5rem 2rem 1rem;
+        text-align: center;
+    }
+    .copyright {
+        --footer-padding: m 2rem 1rem;
+    } 
+}
