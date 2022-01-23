@@ -239,3 +239,31 @@ ul {
     flex-wrap: wrap;
   }
 }
+
+.header .menu-icon{
+  display: none;
+}
+header .menu-icon {
+  cursor: pointer;
+  padding: 2.5rem;
+  position: relative;
+  user-select: none;
+}
+
+.main-head .menu-btn {
+  display: none;
+}
+.menu-btn:checked ~ .main-head {
+  display: block;
+  margin-top: 2em;
+}
+.menu-btn:checked ~ .main-head {
+  max-height: 100%;
+  overflow: inherit;
+}
+
+@media (max-width: 480px) {
+.main-head .menu-icon{
+    display: block;
+}
+}

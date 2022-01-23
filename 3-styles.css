@@ -502,3 +502,37 @@ figcaption {
     max-width: 664px;
     font-size: 1.5rem;
 }
+
+/* Contact us */
+
+.contact {
+    text-align: center;
+    padding: 8rem 0 6rem 0;
+    background-color: white;
+
+}
+
+.contact input {
+    width: 380px;
+    margin-top: 5rem;
+    border: none;
+    border-bottom: 1px solid rgba(7, 22, 41, .17);
+    padding-bottom: .7rem;
+}
+
+.contact input:hover, .contact input:focus {
+    border: none;
+    border-bottom: 1px solid rgba(7, 22, 41, 1);
+    outline: none;
+    transition: .5s;
+}
+
+.contact input::placeholder {
+    color: var(--color-inverted);
+    font-weight: 600;
+}
+
+.contact button {
+    margin-top: 3rem;
+    box-shadow: none;
+}

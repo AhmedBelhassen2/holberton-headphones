@@ -319,6 +319,9 @@ ul {
     --text-color: #080808;
     --font-family: Source Sans Pro;
     --font-size-icons: 130px;
+    --font-size-menu: 14px;
+    --color-inverted: #071629;
+
 }
 
 .icons h2 {
@@ -501,4 +504,121 @@ figcaption {
     margin: 0 auto;
     max-width: 664px;
     font-size: 1.5rem;
+}
+
+/* Contact us */
+
+.contact {
+    text-align: center;
+    padding: 8rem 0 6rem 0;
+    background-color: white;
+
+}
+
+.contact input {
+    width: 380px;
+    margin-top: 5rem;
+    border: none;
+    border-bottom: 1px solid rgba(7, 22, 41, .17);
+    padding-bottom: .7rem;
+}
+
+.contact input:hover, .contact input:focus {
+    border: none;
+    border-bottom: 1px solid rgba(7, 22, 41, 1);
+    outline: none;
+    transition: .5s;
+}
+
+.contact input::placeholder {
+    color: var(--color-inverted);
+    font-weight: 600;
+}
+
+.contact button {
+    margin-top: 3rem;
+    box-shadow: none;
+}
+
+/* FOOTER */
+
+
+footer {
+    min-height: 250px;
+    background-color: #071629;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer {
+    background-color: rgb(8, 8, 29);
+    min-height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1400px;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    padding-top: 80px;
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 4em;
+        margin: 0 auto;
+        padding-right: 5em;
+        padding-left: 5em;
+}
+
+.footer-links {
+    font-family: 'holberton_school-icon';
+    font-size: 2.2rem;
+    margin-top: 2em;
+    
+
+}
+
+.footer-links li {
+    margin-right: .4rem;
+}
+
+.footer-links li:last-child {
+    margin-right: 0;
+}
+
+.copyright {
+    text-align: center;
+    opacity: 0.35;
+    font-size: var(--font-size-menu);
+    margin-top: 100px;
+        color: gray;
+        text-align: center;
+        font-size: 10px;
+        padding: 2rem;
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.35;
+        text-align: center;
+    }
+
+@media (max-width: 480px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+
+.logo-text {
+    width: 161px;
+
 }
